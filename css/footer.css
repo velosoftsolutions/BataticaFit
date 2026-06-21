@@ -1,0 +1,187 @@
+/* ==========================================
+FOOTER
+========================================== */
+
+.footer{
+
+background:white;
+
+padding:50px 0 25px;
+
+border-top:1px solid #ececec;
+
+}
+
+/* LOGOS */
+
+.footer-logos{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:35px;
+
+flex-wrap:wrap;
+
+margin-bottom:30px;
+
+}
+
+.footer-logos img{
+
+height:65px;
+width:auto;
+
+object-fit:contain;
+
+opacity:.95;
+
+transition:.3s;
+
+}
+
+.footer-logos img:hover{
+
+transform:scale(1.08);
+
+opacity:1;
+
+}
+
+.footer-logos img:nth-child(1){ /* Batatica */
+height:70px;
+}
+
+.footer-logos img:nth-child(2){ /* Batigranja */
+height:75px;
+}
+
+.footer-logos img:nth-child(3){ /* RAI */
+height:55px;
+}
+
+.footer-logos img:nth-child(4){ /* Sello */
+height:70px;
+}
+
+/* REDES */
+
+.footer-redes{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-bottom:35px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-redes a{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:1.1rem;
+
+font-weight:600;
+
+text-decoration:none;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+/* INSTAGRAM */
+
+.footer-redes a:first-child{
+
+background:#fff0f5;
+
+color:#d62976;
+
+}
+
+/* WHATSAPP */
+
+.footer-redes a:last-child{
+
+background:#e9fff0;
+
+color:#25D366;
+
+}
+
+.footer-redes a:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ICONOS */
+
+.footer-redes i{
+
+font-size:1.4rem;
+
+}
+
+/* MENU */
+
+.footer-menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+margin-bottom:30px;
+
+}
+
+.footer-menu a{
+
+text-decoration:none;
+
+color:#3f6b37;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.footer-menu a:hover{
+
+color:#e88967;
+
+}
+
+/* COPYRIGHT */
+
+.footer-copy{
+
+text-align:center;
+
+color:#777;
+
+font-size:.95rem;
+
+padding-top:25px;
+
+border-top:1px solid #ececec;
+
+}

@@ -1,0 +1,181 @@
+.comprar{
+
+padding:90px 0;
+
+background:#e4dccb;
+
+color:#3f6b37;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.comprar::before,
+.comprar::after{
+
+content:"";
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.comprar::before{
+width:350px;
+height:350px;
+top:-150px;
+left:-150px;
+}
+
+.comprar::after{
+width:280px;
+height:280px;
+bottom:-120px;
+right:-120px;
+opacity:.05;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+position:relative;
+z-index:2;
+}
+
+.comprar h2{
+text-align:center;
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.comprar-subtitle{
+text-align:center;
+margin-bottom:60px;
+opacity:.9;
+color:#3f6b37;
+}
+
+/* TRACK */
+.comprar-track{
+display:flex;
+
+gap:70px;
+
+width:max-content;
+
+animation:scrollStores 60s linear infinite;
+}
+
+.comprar-track:hover{
+animation-play-state:paused;
+}
+
+/* animación */
+@keyframes scrollStores{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* ITEM */
+.store-item{
+text-align:center;
+transition:.4s;
+cursor:pointer;
+}
+
+.store-item:hover{
+transform:translateY(-10px);
+}
+
+/* CÍRCULO */
+.store-circle{
+width:130px;
+height:130px;
+
+
+border-radius:50%;
+overflow:hidden;
+
+margin:auto;
+
+border:4px solid rgba(255,255,255,.25);
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.store-circle img{
+width:100%;
+height:100%;
+object-fit:contain;
+transition:.4s;
+}
+
+.store-item:hover img{
+transform:scale(1.1);
+}
+
+.store-circle a{
+display:block;
+width:100%;
+height:100%;
+}
+
+.store-circle a img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.3s;
+cursor:pointer;
+}
+
+.store-circle a:hover img{
+transform:scale(1.08);
+}
+
+/* INFO (SIN CARD) */
+.store-info{
+margin-top:15px;
+display:flex;
+flex-direction:column;
+}
+
+.store-info h3{
+font-size:1.2rem;
+margin-bottom:5px;
+}
+
+.store-info p{
+font-size:.95rem;
+opacity:.9;
+}
+
+.store-info span{
+font-size:.85rem;
+opacity:.7;
+}
+
+.store-item.active{
+transform:scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.comprar-track{
+gap:40px;
+}
+}
+

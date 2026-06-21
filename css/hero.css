@@ -1,0 +1,191 @@
+
+
+.hero{
+   position:relative;
+   background:#e88967;
+   overflow:hidden;
+}
+
+
+.hero-container{
+   position:relative;
+   width:100%;
+   max-width:1600px;
+   margin:auto;
+}
+
+/* Fondo */
+
+.hero-bg{
+   width:100%;
+   display:block;
+   height:auto;
+   margin-top:-100px;
+   margin-bottom:-100px;
+}
+
+/* Productos animados */
+
+.hero-productos{
+   position:absolute;
+   left:45%;
+   top:45%;
+   width:65%;
+   transform:translate(-50%,-50%);
+   z-index:5;
+   animation:productAnimation 6s ease-in-out infinite;
+}
+
+/* Texto */
+
+.hero-content{
+   position:absolute;
+   right:6%;
+   top:50%;
+   transform:translateY(-50%);
+   max-width:500px;
+   z-index:10;
+   color:#fff;
+}
+
+.hero-content h1{
+   font-size:3.5rem;
+   line-height:1.1;
+   margin-bottom:20px;
+
+}
+
+.hero-content p{
+   font-size:1.2rem;
+   line-height:1.8;
+   margin-bottom:35px;
+}
+
+/* Botones */
+
+.hero-buttons{
+   display:flex;
+   gap:20px;
+   flex-wrap:wrap;
+}
+
+.btn-primary{
+   background:#ffffff;
+   color:#e67e22;
+   padding:15px 35px;
+   border-radius:40px;
+   font-weight:600;
+   transition:.3s;
+}
+
+.btn-primary:hover{
+   transform:translateY(-3px);
+}
+
+.btn-secondary{
+   border:2px solid #fff;
+   color:#fff;
+   padding:15px 35px;
+   border-radius:40px;
+   transition:.3s;
+}
+
+.btn-secondary:hover{
+   background:#fff;
+   color:#e67e22;
+}
+
+/* Animación productos */
+
+@keyframes productAnimation{
+
+0%{
+transform:
+translate(-50%,-50%)
+translateY(0)
+scale(1);
+}
+
+25%{
+transform:
+translate(-50%,-50%)
+translateY(-8px)
+scale(1.02);
+}
+
+50%{
+transform:
+translate(-50%,-50%)
+translateY(0)
+scale(1.04);
+}
+
+75%{
+transform:
+translate(-50%,-50%)
+translateY(8px)
+scale(1.02);
+}
+
+100%{
+transform:
+translate(-50%,-50%)
+translateY(0)
+scale(1);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.hero{
+min-height:auto;
+padding:60px 0;
+}
+
+.hero-content{
+   position:relative;
+   top:auto;
+   right:auto;
+   transform:none;
+   max-width:90%;
+   margin:40px auto 0;
+   text-align:center;
+}
+
+.hero-productos{
+   position:absolute;
+   left:50%;
+   top:55%;
+   width:45%;
+}
+
+.hero-content h1{
+font-size:3rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-productos{
+width:60%;
+top:50%;
+}
+
+.hero-content h1{
+font-size:2.2rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+}
+
