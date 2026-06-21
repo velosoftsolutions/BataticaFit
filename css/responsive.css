@@ -223,35 +223,57 @@ font-size:2rem;
 @media (max-width: 768px){
 
     .batigranja-section{
-        padding:70px 0;
+        padding:50px 15px;
+        overflow:hidden;
     }
 
-    .batigranja-info .tag{
-        font-size:1rem;
+    .batigranja-wrapper{
+        display:flex;
+        flex-direction:column;
+        gap:25px;
     }
 
-    .batigranja-info h2{
-        font-size:2.2rem;
-        line-height:1.1;
+    .batigranja-featured-image{
+        max-width:100%;
+        margin:0;
     }
 
     .batigranja-featured-image img{
-        height:320px;
-        border-radius:40px 15px 40px 15px;
+        width:100%;
+        height:auto;
+        max-height:300px;
+        object-fit:cover;
+        border-radius:25px;
+    }
+
+    .batigranja-info{
+        width:100%;
+    }
+
+    .batigranja-info .tag{
+        font-size:1.2rem;
+        line-height:1.2;
+    }
+
+    .batigranja-info h2{
+        font-size:2rem;
+        line-height:1.1;
+        word-break:normal;
+    }
+
+    .batigranja-intro{
+        font-size:1rem;
+        max-width:100%;
     }
 
     .feature-card{
-        padding:15px;
+        width:100%;
+        box-sizing:border-box;
     }
 
     .feature-icon{
         width:45px;
         height:45px;
-    }
-
-    .batigranja-intro{
-        font-size:1rem;
-        line-height:1.7;
     }
 
     .btn-outline{
