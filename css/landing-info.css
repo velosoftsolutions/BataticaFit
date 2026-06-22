@@ -173,24 +173,6 @@ gap:40px;
 align-items:center;
 }
 
-.batigranja-gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-.batigranja-gallery img{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:25px;
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-transition:.4s;
-}
-
-.batigranja-gallery img:hover{
-transform:translateY(-8px);
-}
 
 .batigranja-info .tag{
 margin-bottom:15px;
